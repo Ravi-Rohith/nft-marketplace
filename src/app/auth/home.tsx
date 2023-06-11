@@ -1,12 +1,15 @@
-import { url } from 'inspector';
 import Navbar from '../components/navbar'
+import Wwad from '../components/wwad';
+import toppic from '../assets/grid1-top.png'
+import bottpic from '../assets/grid1-bottom.png'
 
-function Page() {
+
+function Home() {
     
     return (
-        <div className="max-w h-[50rem]">
+        <div className="max-w w- h-[50rem]">
             <Navbar></Navbar>
-            <div className='flex flex-col items-center justify-center my-[10rem]'>
+            <div className='flex flex-col items-center justify-center mt-[10rem]'>
                 <div className='flex flex-row items-center justify-center'>
                     <p className='w-[17rem] text-end my-[15px]'>EVERY TREE IN THE FOREST KNOWS ABOUT CREATING VALUE AND ABOUT RECIPROCITY</p>
                     <div className='w-4 h-12 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-8 drop-shadow-lg'></div>
@@ -24,8 +27,13 @@ function Page() {
                     
                 </div>
             </div>
+            <div className='flex-row justify-center items-center'>
+                <img className="mx-auto" src={toppic.src} alt="top" />
+                <img className="mx-auto" src={bottpic.src} alt="bottom" />
+            </div>
+            <Wwad></Wwad>
         </div>
     )
 }
 
-export default Page;
+export default Home;

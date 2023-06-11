@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import Page from './auth/page'
+import Home from './auth/home'
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
-      <Page></Page>
+      <Home></Home>
     </div>
   )
 }
